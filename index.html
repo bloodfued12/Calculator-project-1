@@ -6,21 +6,24 @@
   .grid-container {
    border: 3px solid black;
    display: grid;
-   grid-template-areas: 
+   grid-template-areas:
+    "item0 item0 item0 item0"
     "item1 item2 item3 item4"
     "item5 item6 item7 item8"
     "item9 item10 item11 item12"
     "item13 item13 item13 item13";
    width: 600px;
-   height: 600px;
+   height: 700px;
   }
   .grid-item {
-  background-color: #286087;
+  background-color: #3268a8;
   border-radius: 35px;
   }
+  .item0 {
+   grid-area: item0;
+   background-color: white;
+  }
   .item1 {
-   grid-area: item1;
-  }.item1 {
    grid-area: item1;
   }
   .item2 {
@@ -64,17 +67,18 @@
  <body>
   <h1>Calculator<h1>
   <div class="grid-container">
-   <button class="grid-item item1">1<button>
-   <button class="grid-item item2">2<button>
-   <button class="grid-item item3">3<button>
-   <button class="grid-item item4">4<button>
-   <button class="grid-item item5">5<button>
-   <button class="grid-item item6">6<button>
-   <button class="grid-item item7">7<button>
-   <button class="grid-item item8">8<button>
-   <button class="grid-item item9">9<button>
-   <button class="grid-item item10">+<button>
-   <button class="grid-item item11">=<button>
+   <div class="grid-item item0"></div>
+   <button class="grid-item item1">1</button>
+   <button class="grid-item item2">2</button>
+   <button class="grid-item item3">3</button>
+   <button class="grid-item item4">4</button>
+   <button class="grid-item item5">5</button>
+   <button class="grid-item item6">6</button>
+   <button class="grid-item item7">7</button>
+   <button class="grid-item item8">8</button>
+   <button class="grid-item item9">9</button>
+   <button class="grid-item item10">+</button>
+   <button class="grid-item item11">=</button>
    <button class="grid-item item12">&times;<button>
    <button class="grid-item item13">&div;<button>
   </div>
